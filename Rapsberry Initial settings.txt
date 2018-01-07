@@ -17,3 +17,5 @@ while True:
     sleep(1)
 	
 ..............
+
+7. Have fun out there
