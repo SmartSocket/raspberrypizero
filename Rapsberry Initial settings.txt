@@ -1,0 +1,19 @@
+1. Put sd card in phone and format it
+2. load raspbian OS image(Download from site) into the card, win32DiskImager tool can be used
+3. After image loading Open folder of card and Add a file ssh into the root folder(without any extension .txt etc)
+4. ssh through putty and open raspi-config
+5. Enable vnc, serial, Wifi settings or whatever u want to enable
+6. To Turn On PIN on or Off
+........ Python code (COURTESY https://www.raspberrypi.org/blog/gpio-zero-a-friendly-python-api-for-physical-computing/)
+from gpiozero import LED
+from time import sleep
+
+led = LED(18) // Here 18 is GPIO18 on board
+
+while True:
+    led.on()
+    sleep(1)
+    led.off()
+    sleep(1)
+	
+..............
